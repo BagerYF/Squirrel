@@ -1,0 +1,52 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '13.0'
+
+target 'Squirrel' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Squirrel
+  pod 'Alamofire'
+  pod 'Kingfisher'
+  pod 'IQKeyboardManagerSwift'
+  pod 'SwiftyJSON'
+  pod 'HandyJSON'
+  pod 'JXSegmentedView'
+  pod 'SwifterSwift'
+  pod 'SnapKit'
+  pod 'MMKV'
+  pod 'Apollo'
+  pod 'ESPullToRefresh'
+  pod 'Then'
+  pod 'Moya'
+  pod 'Timepiece'
+  pod 'NVActivityIndicatorView'
+  pod 'Popover'
+  pod 'EasyTipView'
+  pod 'ProgressHUD'
+  pod 'Onboard'
+  pod 'Hero'
+  pod 'SkeletonView'
+  pod 'FittedSheets'
+  pod 'SwiftMessages'
+
+  target 'SquirrelTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'SquirrelUITests' do
+    # Pods for testing
+  end
+
+end
+
+#post_install do |installer|
+#    installer.generated_projects.each do |project|
+#        project.targets.each do |target|
+#            target.build_configurations.each do |config|
+#                config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+#            end
+#        end
+#    end
+#end
